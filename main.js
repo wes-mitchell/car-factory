@@ -35,7 +35,7 @@ const addDriveTrain = (chassisObject) => {
 }
 
 
-const buildCar = () => {
+const finalCar = () => {
   const chassis = createChassis()
   const chassisBody = addBody(chassis)
   const chassisWheels = addWheels(chassisBody)
@@ -46,6 +46,6 @@ const buildCar = () => {
   return chassisDriveTrain
 }
 
-const car1 = buildCar()
+const car1 = finalCar()
 
 console.log(car1)
